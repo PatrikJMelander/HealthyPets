@@ -35,9 +35,12 @@ public class Animal implements IFood {
         return weight;
     }
 
+
+    //Denna metod har jag ifall djurets vikt skulle ändras
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
 
     @Override
     public String toString() {

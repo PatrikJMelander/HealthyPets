@@ -26,4 +26,6 @@ public class Dog extends Animal implements IFood{
         JOptionPane.showMessageDialog(null, super.getName() + " ska matas med " + decimalFormat.format(portion) + " gram hundmat", "Matar", JOptionPane.INFORMATION_MESSAGE,imageDog);
     }
 
+
+
 }

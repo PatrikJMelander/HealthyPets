@@ -36,7 +36,7 @@ public class HealthyPetsDemo {
                 break;
 
             try{
-                input = input.toLowerCase();
+                input = input.toLowerCase().trim();
                 //Här använder jag mig av polymorfism
                 animalMap.get(input).giveFood();
 
