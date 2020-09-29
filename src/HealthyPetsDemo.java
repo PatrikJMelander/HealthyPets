@@ -15,14 +15,13 @@ import java.util.*;
 public class HealthyPetsDemo {
     public static void main(String[] args) {
         HealthyPetsDemo healthyPetsDemo = new HealthyPetsDemo();
-
     }
 
     public HealthyPetsDemo() {
         //Blev intresserad av HashMap när du nämnde det förra lektionen
         // så kollade denna film för att implementera det i denna uppgift
         //https://www.youtube.com/watch?v=70qy6_gw1Hc
-        Map<String, Animal> animalMap = new HashMap<String, Animal>();
+        HashMap<String, Animal> animalMap = new HashMap();
         animalMap.put("sixten",new Dog("Sixten", 5.0));
         animalMap.put("dogge", new Dog("Dogge", 10.0));
         animalMap.put("venus", new Cat("Venus", 5.0));
@@ -32,7 +31,7 @@ public class HealthyPetsDemo {
         while (true){
             String input;
             int answer;
-            input = JOptionPane.showInputDialog("Vilket djur ska få mat? (ange namn)",JOptionPane.QUESTION_MESSAGE);
+            input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat? (ange namn)", "Matdags?", JOptionPane.QUESTION_MESSAGE);
             if (input == null)
                 break;
 
@@ -57,9 +56,6 @@ public class HealthyPetsDemo {
                     System.exit(0);
             }
         }
-
-
     }
-
 }
 

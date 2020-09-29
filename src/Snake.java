@@ -10,11 +10,13 @@ import javax.swing.*;
  */
 public class Snake extends Animal implements IFood{
     public Snake(String name, double weight) {
+
         super(name, weight);
     }
 
     @Override
     public void giveFood() {
-        JOptionPane.showMessageDialog(null, super.getName() + " ska matas med "+ Portion.SNAKEFOOD.getDigit() +  "g ormpellets");
+        ImageIcon imageSnake = new ImageIcon("Snake.jpg");
+        JOptionPane.showMessageDialog(null, super.getName() + " ska matas med "+ Portion.SNAKEFOOD.getDigit() +  "g ormpellets", "Matas", JOptionPane.INFORMATION_MESSAGE, imageSnake);
     }
 }
