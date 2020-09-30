@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
  * Project: HealthyPets
  * Copyright: MIT
  */
-public class Dog extends Animal implements IFood{
+public class Dog extends Animal{
 
 
     public Dog(String name, double weight) {

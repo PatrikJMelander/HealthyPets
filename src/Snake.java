@@ -8,7 +8,7 @@ import javax.swing.*;
  * Project: HealthyPets
  * Copyright: MIT
  */
-public class Snake extends Animal implements IFood{
+public class Snake extends Animal{
     public Snake(String name, double weight) {
 
         super(name, weight);

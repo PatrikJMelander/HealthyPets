@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
  * Project: HeaalthyPets
  * Copyright: MIT
  */
-public class Cat extends Animal implements IFood {
+public class Cat extends Animal{
 
 
     public Cat(String name, double weight) {
